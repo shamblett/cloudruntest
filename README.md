@@ -1,7 +1,7 @@
 # Hello World - Dart sample
 
 A simple web app written in the [Dart](https://www.dartlang.org) programming language
-that you can use for testing. It reads in the env variable `TARGET` and prints
+that you can use for testing Dart on cloud run. It reads in the env variable `TARGET` and prints
 `"Hello $TARGET"`. If `TARGET` is not specified, it will use `"World"` as
 `TARGET`.
 
@@ -14,8 +14,8 @@ that you can use for testing. It reads in the env variable `TARGET` and prints
 
 ## Recreating the sample code
 
-While you can clone all of the code from this directory, it is useful to know
-how to build a hello world Dart application step-by-step. This application can
+While you can clone all of the code from this repository, it is useful to know
+how to build a hello world Dart server application step-by-step. This application can
 be created using the following instructions.
 
 1. Create a new directory and write `pubspec.yaml` as follows:
@@ -84,11 +84,11 @@ be created using the following instructions.
 
 ## Building and deploying the sample
 
-Once you have recreated the sample code files (or used the files in the sample
-folder) you're ready to build and deploy the sample app.
+Once you have recreated the sample code files (or used the existing files) 
+you're ready to build and deploy the sample app.
 
 1. Build your container image using Cloud Build, by running the following command from 
-   directory containing the Dockerfile:
+   the top level directory containing the Dockerfile:
    
    ``` builds submit --tag gcr.io/[PROJECT-ID]/helloworld ```
    
@@ -104,13 +104,13 @@ folder) you're ready to build and deploy the sample app.
     config get-value project.
 
     When prompted, select a region (for example us-central1), confirm the service name, 
-    and respond y to allow unauthenticated invocations.
+    and respond 'y' to allow unauthenticated invocations.
 
     Then wait a few moments until the deployment is complete. On success, the 
     command line displays the service URL. Visit your deployed container by opening the 
     service URL in a web browser.
     
-    Congratulations! You have just deployed an application packaged in a container 
+    Congratulations! You have just deployed a Dart application packaged in a container 
     image to Cloud Run. Cloud Run automatically and horizontally scales your 
     container image to handle the received requests, then scales down when demand 
     decreases. You only pay for the CPU, memory, and networking consumed during 
