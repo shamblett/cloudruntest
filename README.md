@@ -38,7 +38,7 @@ be created using the following instructions.
    pub get
    ```
 
-3. Create a new file `bin/main.dart` and write the following code:
+3. Create a new file `bin/server.dart` and write the following code:
 
    ```dart
    import 'dart:io';
