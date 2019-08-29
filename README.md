@@ -12,6 +12,9 @@ that you can use for testing Dart on cloud run. It reads in the env variable `TA
 
 - A [dart-sdk](https://www.dartlang.org/tools/sdk#install) installed and
   configured if you want to run the program locally.
+  
+- Courtesy of Google you can click the 'Run on Google Cloud' button above to 
+  deploy the application - try it!
 
 ## Recreating the sample code
 
