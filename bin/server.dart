@@ -16,7 +16,7 @@ Future main() async {
   var server = await serve(
     Pipeline().addMiddleware(logRequests()).addHandler(handler),
     InternetAddress.anyIPv4,
-    port,
+    port!,
   );
   print('Serving at http://${server.address.host}:${server.port}');
 }
